@@ -1,0 +1,28 @@
+Algorithem :
+
+Read n 
+
+for i=0 to (n-1) in steps of 1 do
+  
+    Read x[i] , y[i]
+    
+    End for
+    
+    for j=0 to (n-2) in steps of 1 do 
+    
+      for j=0 to (n-j-2) in steps of 1 do
+      
+          if(j==0) then
+          
+          d[i][j] = y[i+1] - y[i]/x[i+1]-x[i]
+          
+        Else 
+        
+          d[i][j] = d[i+1][j-1]-d[j][j-1]/x[i+j+1]-x[i]
+          
+        Else if
+        
+      End for
+     
+    End for
+  End
