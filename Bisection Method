@@ -1,0 +1,38 @@
+Approach :-
+The value of the intervals a and b.
+input the equcation
+Divided the intervals as m = (a+b)/2
+print m is the root
+if f(m)!=0
+Check if f(a) * f(m) < 0
+Then root will lie between a and m
+Check if f(b) * f(m) < 0
+Then root will lie between b and m
+
+Algorithem:-
+Start
+Step 1-> In function double solution(double x)
+   Return x*x*x - x*x + 2
+Step 2-> In function bisection(double a, double b)
+   If solution(a) * solution(b) >= 0 then,
+      Print "You have not assumed right a and b "
+      Return
+   End If
+   Set c = a
+   Loop While (b-a) >= EP
+      Set c = (a+b)/2
+      If solution(c) == 0.0
+         Break
+      End If
+      Else if solution(c)*solution(a) < 0
+         Set b = c
+      End Else If
+      Else
+         Set a = c
+      End Else
+   End
+   Print "The value of root”
+Step 3-> In function int main()
+   Declare and Initialize inputs  a =-500, b = 100
+   Call function bisection(a, b)
+Stop
