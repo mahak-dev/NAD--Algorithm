@@ -1,0 +1,10 @@
+Algorithem :
+
+Step 1. Start the program.
+Step 2. Define the function x = φ(x).
+Step 3. Enter the initial guess of the root, say x0.
+Step 4. Calculate y0 = φ(x0).
+Step 5. If |x0 – y0| < ϵ, a prescribed accuracy, then go to step 7.
+Step 6. Let x0 = y0 and go to step 4.
+Step 7. Print the value of x0.
+Step 8. Stop the program.
