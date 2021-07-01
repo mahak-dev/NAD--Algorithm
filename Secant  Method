@@ -1,0 +1,18 @@
+Algorithem for Secant Method 
+
+Step 1: Choose i=1
+
+Step 2: Start with the initial guesses, xi-1 and xi
+
+Step 3: Use the formula
+  
+	xi+1 = xi - |f(xi)(xi-1-xi)/f(xi-1)-f(xi)|
+
+Step 4: Find Absolute Error,
+ 		|Ea|= |(Xi+1 -Xi)/Xi+1|*100
+
+            Check if |Ea| <= Es (Prescribed tolerance)
+
+            If true then stop
+
+            Else go to step 2 with estimate Xi+1, Xi
