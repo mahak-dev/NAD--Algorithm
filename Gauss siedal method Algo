@@ -1,0 +1,25 @@
+Algorithem :
+
+1. for i=1 to n in steps of 1 and j=1 to n+1 in steps of 1 do read aij end for.
+2. Read e, maxit
+	Note: e is the allowed relative error in the result vector. maxit is maximum number of iterations allowed for the solution to converge.
+3. for i=1 to n in steps of 1 xi=0 end for
+4. for itr=1 to maxit do
+	big=0
+5. for i=1 to n in steps of 1 do
+	sum=0
+6. for j=1 to n in steps of 1 do
+7. for (j≠i) then sum =sum+aijxj end for
+	temp=(ai(n+1)-sum)/aii
+	relerror=|(xi-temp)/temp|
+8. if relerror > big then big=relerror
+	xi=temp
+	end for
+9. if (big<=e) then
+	begin Write ‘converges to a solution’
+10. for i=1 to n in steps of 1 do Write xi endfor
+	stop end
+	end for
+	Write ‘Does nott converge in maxit iteratioins’
+11	for i=1 to n in steps of 1 do Write xi end for
+12. Stop
