@@ -1,0 +1,27 @@
+Read  x0, e, n, N where x0 is the initial guess of the root, e the allowed error, n the order of the polynomial, and N the total number of iterations.
+
+for i=0 to n in steps of 1 do Read bi end for.
+
+for i=0 to n-1 in steps of 1 do Read bi end for.
+P=an
+bn-1=an
+S=bn-1
+for k=1 to N in steps of 1 do
+   for i=1 to n-1 in steps of 1 do
+bn-(i+1)=an-i+x0bn-i
+S=bn-(i+1)+x0S
+endfor
+P=a0 + b0x0
+x1=x0-(P/S)
+if |x1–x0/x1| ≤ e goto step 18
+else
+x0=x1
+endif
+endfor
+write “root not found in N iterations”
+write S, P, x1, x0
+stop
+write “root found in k iterations”
+x0=x1
+write  x0, S, P
+stop
