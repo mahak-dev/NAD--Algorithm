@@ -1,0 +1,28 @@
+System equcation Ax=b that is matrix form
+
+Where as,
+A = Coefficient Matrix,
+X = variables (Column Matrix),
+b = constants (Column Matrix.
+
+Step 2: Find Augmented Matrix C = [ Ab ]
+
+Step 3: Transform Augmented Matrix into Upper Triangular Matrix.
+
+
+Step 4:  Find equations corresponding to upper triangular matrix.
+Now by using back Substitution reconstruct the equations and find the corresponding values of the variables x, y and z.
+
+1.x + 1.y + 1.z = 6
+0.x – 2y + 0.z = – 4
+0.x – 0.y + 2z = 6
+
+Therefore,
+
+x + y + z = 6
+-2y = -4
+2z = 6
+
+Now, Put the value of y and z into eq. 1.
+X + 2 + 3 = 6 –> x = 1
+Therefore, the roots of the three equations are x = 1 , y = 2, z= 3
