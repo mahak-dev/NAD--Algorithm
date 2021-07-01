@@ -1,0 +1,43 @@
+Algorithem 
+
+read x0 & x1, two initial guesses.
+
+Enter Allowed error and Max iterations.
+
+Take x0=1 & x1=3
+
+f(x0)=-0.3908 and f(x1)=16, in equation (2) we get x3=2.0813
+
+(x0) and f(x1) are not same.
+
+f0=f(x0)
+
+f1=f(x1)
+
+for i=1 to n in steps of 1 do
+
+x2=(x0f1-x1f0)/(f1-f0)
+
+f2=f(x2)
+
+if |f2|<e then
+
+begin Write ‘convergent solution’, x2,f2
+
+stop end
+
+if sign (f2)=sign f(0)
+
+then begin x0=x2
+
+f0=f2
+
+else begin x1=x2
+
+f1=f2
+
+write ‘Does not converge in n iterations’
+
+write x3,f2
+
+stop
