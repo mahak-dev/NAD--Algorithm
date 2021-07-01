@@ -1,0 +1,18 @@
+Step 1 For i = 0, 1,. .. , n do Steps 2 and 3:
+Step 2 Set z2i = xi
+	  z2i+1 = xi
+	  Q2i,0 = f(xi)
+	  Q2i+1,0 = f(xi)
+	  Q2i+1,1 = f
+	  ′
+    	(xi)
+Step 3 If i 6= 0 then set
+	  Q2i,1 =
+	  Q2i,0 − Q2i−1,0
+	  z2i − z2i−1
+Step 4 For i = 2, 3,. .. , 2n + 1
+	  for j = 2, 3,. .. , i set Qi,j =
+  	Qi,j−1 − Qi−1,j−1
+	  zi − zi−j
+Step 5 OUTPUT (Q0,0, Q1,1,. .. , Q2n+1,2n+1)
+Step 6	STOP
